@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MYToDo</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fab_text">ToDo작성</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

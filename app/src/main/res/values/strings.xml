@@ -1,5 +1,18 @@
 <resources>
-    <string name="app_name">MYToDo</string>
-    <string name="fab_text">ToDo작성</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appName">MYToDo</string>
+    <string name="fabText">ToDo작성</string>
+    <string name="settingUserInfo">사용자 정보</string>
+    <string name="settingChangeNick">닉네임 변경</string>
+    <string name="settingGeneric">일반</string>
+    <string name="settingAddNewTaskOnTop">새로운 작업을 상단에 추가</string>
+    <string name="settingMoveImportantToTop">중요한 일을 상단으로 이동</string>
+    <string name="settingCheckBeforeRemove">삭제하기 전에 확인</string>
+    <string name="settingInformation">정보</string>
+    <string name="settingVersion">버전</string>
+    <string name="placeholder">placeholder</string>
+    <string name="menuCurrentTask">현재 할 일</string>
+    <string name="menuImportantTask">중요한 일</string>
+    <string name="menuSetting">환경설정</string>
+    <string name="welcomeMessage">홍길동님 환영합니다!!</string>
+    <string name="counterPlaceholder">완료됨 1</string>
 </resources>

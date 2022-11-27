@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/currentTaskMenu"
+        android:enabled="true"
+        android:icon="@drawable/menu_todo_icon"
+        android:title="@string/menuCurrentTask"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/importantTaskMenu"
+        android:enabled="true"
+        android:icon="@drawable/star_empty"
+        android:title="@string/menuImportantTask"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settingMenu"
+        android:enabled="true"
+        android:icon="@drawable/menu_setting_icon"
+        android:title="@string/menuSetting"
+        app:showAsAction="always" />
+</menu>

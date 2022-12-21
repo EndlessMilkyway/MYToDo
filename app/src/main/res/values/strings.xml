@@ -12,6 +12,11 @@
     <string name="menuCurrentTask">현재 할 일</string>
     <string name="menuImportantTask">중요한 일</string>
     <string name="menuSetting">환경설정</string>
-    <string name="welcomeMessage">홍길동님 환영합니다!!</string>
     <string name="counterPlaceholder">완료됨 1</string>
+    <string name="initMessage">애플리케이션을 처음 실행 하셨습니다!\n사용자 닉네임을 입력해주세요.</string>
+    <string name="initInputHint">닉네임을 입력해주세요</string>
+    <string name="submit">확인</string>
+    <string name="version">버전</string>
+    <string name="taskCounter">완료됨 : %1d</string>
+    <string name="welcomeMessage">%1s님 환영합니다!!</string>
 </resources>

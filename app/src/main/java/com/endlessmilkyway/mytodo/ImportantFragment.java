@@ -3,6 +3,7 @@ package com.endlessmilkyway.mytodo;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,8 @@ public class ImportantFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup)inflater.inflate(R.layout.fragment_important, container, false);
         mContext = getActivity().getApplicationContext();
+        ActionBar actionBar = ((MainActivity)getActivity()).getSupportActionBar();
+        actionBar.setTitle("중요한 일");
 
         RecyclerView toDoImportantList = rootView.findViewById(R.id.toDoImportantList);
 

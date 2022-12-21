@@ -22,17 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //database = ToDoItemDB.getInstance(this);
-
-        /*class DBRunnable implements Runnable {
-            @Override
-            public void run() {  }
-        }
-
-        DBRunnable dbRunnable = new DBRunnable();
-        Thread t = new Thread(dbRunnable);
-        t.start();*/
-
         homeFragment = new HomeFragment();
         importantFragment = new ImportantFragment();
         settingFragment = new SettingFragment();
@@ -43,12 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView.setOnItemSelectedListener(item -> navItemCommit(item.getItemId()));
     }
-
-    /*@Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ToDoItemDB.destroyDatabase();
-    }*/
 
     private boolean navItemCommit(int id) {
         if (id == R.id.currentTaskMenu) {

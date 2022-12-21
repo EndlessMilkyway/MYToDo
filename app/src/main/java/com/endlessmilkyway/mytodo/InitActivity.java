@@ -3,6 +3,7 @@ package com.endlessmilkyway.mytodo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import java.util.Objects;
 
 public class InitActivity extends AppCompatActivity {
     private SharedPreferences pref;
+    private SharedPreferences prefEnv;
     private MaterialTextView initTextView;
     private TextInputLayout initInputLayout;
     private TextInputEditText nickInput;
@@ -37,6 +39,7 @@ public class InitActivity extends AppCompatActivity {
         submitButton = (MaterialButton) findViewById(R.id.submitButton);
 
         pref = getSharedPreferences("isFirst", MODE_PRIVATE);
+        prefEnv = getSharedPreferences("setting", Context.MODE_PRIVATE);
 
         nickInput.setOnTouchListener((view, motionEvent) -> {
             submitButton.setVisibility(View.VISIBLE);
@@ -49,6 +52,11 @@ public class InitActivity extends AppCompatActivity {
             editor.putBoolean("isFirst", true);
             editor.putString("nickname", Objects.requireNonNull(nickInput.getText()).toString());
             editor.apply();
+
+            SharedPreferences.Editor settingEditor = prefEnv.edit();
+            settingEditor.putBoolean("addNewTaskAtTop", false);
+            settingEditor.putBoolean("moveImportantToTop", false);
+            settingEditor.putBoolean("checkBeforeDelete", true);
 
             nickInput.setVisibility(View.GONE);
             initInputLayout.setVisibility(View.GONE);
